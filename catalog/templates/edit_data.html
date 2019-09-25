@@ -1,0 +1,16 @@
+ <html>  
+   <body>  
+      <form action = "{{url_for('edit_data',edit_id=register.id)}}" method = "post">  
+         <table>  
+        <tr><td>Name</td>  
+        <td><input type ="text" name ="name" value="{{register.name}}"></td></tr>  
+        <tr><td>Email</td>  
+        <td><input type ="text" name ="email" value="{{register.email}}"></td></tr> 
+        <tr><td>DES</td>   
+        <td><input type="text" name="des" value="{{register.des}}"></td></tr>
+        <!-- td><input type="file" name = "file"></td> -->
+        <tr><td><input type = "submit"></td></tr>  
+    </table>  
+      </form>  
+   </body>  
+</html>  

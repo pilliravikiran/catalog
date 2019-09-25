@@ -1,0 +1,27 @@
+ <html>
+ <head>
+       
+ </head> 
+   <body>
+
+      <form action = "/login" method = "post"> 
+        <div>
+          {% with messages = get_flashed_messages() %}
+            {% if messages %}
+              {%for message in messages%}
+              <h3>{{message}}</h3>
+              {% endfor %}
+            {%endif%}
+            {% endwith %}
+        </div> 
+         <table>  
+        <tr><td>Email</td>  
+        <td><input type ="text" name ="email"></td></tr> 
+        <tr><td>passwd</td>   
+        <td><input type="text" name="passwd"></td></tr>
+        <tr><td><input type = "submit"></td></tr>  
+    </table>  
+      </form>  
+
+   </body> 
+</html>  

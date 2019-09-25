@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hai</title>
+</head>
+<body>
+	<table border = 1 cellspacing=10 cellpadding=10>
+		<tr>
+			<td><h5>Table : {{name}}</h5></td>
+			{% for i in range(1,val+1): %}
+			<td>
+				<h5>{{name}} * {{i}} = {{name*i}}</h5>
+			</td>
+			{% endfor %}
+		</tr>
+		
+</table>
+</body>
+</html>
